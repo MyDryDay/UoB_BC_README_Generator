@@ -15,11 +15,42 @@ const questions = [
     "Please enter your contact information should anyone have any questions: ",
 ];
 
+// Object Constructor function for each question
+function Question(type, name, message, choices){
+    this.type=type;
+    this.name=name;
+    this.message=message;
+    this.choices=choices;
+    this.questions=questions;
+}
+
+// // Function to ask the questions via command prompt and store them in an object called data
+// function askQuestions(){
+
+//     inquirer.prompt([
+//         new Question("input", "title", questions[0]),
+//         new Question("input", "description", questions[1]),
+//         new Question("input", "install", questions[2]),
+//         new Question("input", "intructions", questions[3]),
+//         new Question("list", "license", questions[4], 
+//         ["Apache 2.0", "GNU General Public 3.0", "MIT", "BSD 2-Clause 'Simplified'", "BSD 3-Clause 'New' or 'Simplified'", "Boost Software 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "GNU Lesser General Public v2.1", "Mozilla Public 2.0", "The Unlicense"]),
+//         new Question("input", "contribute", questions[5]),
+//         new Question("input", "test", questions[6]),
+//         new Question("input", "contact", questions[7]),
+//     ]).then(data => {
+//         console.log(JSON.stringify(data));
+//     });
+
+// }
+
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init(questions) {
+    askQuestions(questions);
+}
 
 // Function call to initialize app
 init();
