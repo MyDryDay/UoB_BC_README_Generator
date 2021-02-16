@@ -16,11 +16,12 @@ const questions = [
 ];
 
 // Object Constructor function for each question
-function Question(type, name, message, choices){
+function Question(type, name, message, choices, mChoices){
     this.type=type;
     this.name=name;
     this.message=message;
     this.choices=choices;
+    this.mChoices=mChoices;
     this.questions=questions;
 }
 
@@ -36,16 +37,20 @@ function askQuestions(){
         ["Apache 2.0", "GNU General Public 3.0", "MIT", "BSD 2-Clause 'Simplified'", "BSD 3-Clause 'New' or 'Simplified'", "Boost Software 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "GNU Lesser General Public v2.1", "Mozilla Public 2.0", "The Unlicense"]),
         new Question("input", "contribute", questions[5]),
         new Question("input", "test", questions[6]),
-        new Question("input", "contact", questions[7]),
+        new Question("checkbox", "contact", questions[7], 
+        ["Email: g.cope13@gmail.com", "GitHub: https://github.com/MyDryDay", "LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/", "Telegram: https://t.me/G_Cope97"]),
     ]).then(data => {
-        console.log(JSON.stringify(data));
+        // console.log(JSON.stringify(data));
+        console.log(data);
+        generateMarkdown(data);
     });
 
 }
 
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    
+}
 
 // TODO: Create a function to initialize app
 function init(questions) {
