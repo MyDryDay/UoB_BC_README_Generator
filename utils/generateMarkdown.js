@@ -1,6 +1,17 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+function renderLicenseBadge(data) {
+  let badgeLink;
+  if(data.license !== ""){
+    badgeLink=`[![GitHub license](https://img.shields.io/github/license/MyDryDay/${data.title}.svg)](https://github.com/MyDryDay/${data.title}/blob/main/LICENSE)`;
+    return badgeLink;
+  }else if(data.license == "No License"){
+    badgeLink="";
+    return badgeLink;
+  }
+  // [![GitHub license](https://img.shields.io/github/license/**USERNAME**/**REPO_NAME**/.svg)](https://github.com/**USERNAME**/**REPO_NAME**/blob/main/LICENSE)
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -19,7 +30,7 @@ function generateMarkdown(data) {
   ${data.install} \
   ### Usage \
   ${data.instructions} \
-  #### License \
+  #### License ${renderLicenseBadge(data)}\
   ${data.license} \
   renderLicenseLink(); \
   renderLicenseSection(); \
