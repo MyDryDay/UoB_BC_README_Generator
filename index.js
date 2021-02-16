@@ -34,7 +34,7 @@ function askQuestions(){
         new Question("input", "install", questions[2]),
         new Question("input", "instructions", questions[3]),
         new Question("list", "license", questions[4], 
-        ["Apache 2.0", "GNU General Public 3.0", "MIT", "BSD 2-Clause 'Simplified'", "BSD 3-Clause 'New' or 'Simplified'", "Boost Software 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "GNU Lesser General Public v2.1", "Mozilla Public 2.0", "The Unlicense", "No License"]),
+        ["Apache 2.0", "GNU General Public 3.0", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Creative Commons Zero v1.0", "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "Mozilla Public 2.0", "The Unlicense", "No License"]),
         new Question("input", "contribute", questions[5]),
         new Question("input", "test", questions[6]),
         new Question("checkbox", "contact", questions[7], 
