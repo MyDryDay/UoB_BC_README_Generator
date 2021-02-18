@@ -41,7 +41,7 @@ function askQuestions(){
         [" Email: g.cope13@gmail.com", " GitHub: https://github.com/MyDryDay", " LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/", " Telegram: https://t.me/G_Cope97"]),
     ])
     .then((data) => 
-    writeToFile(`_README.md`, data));
+    writeToFile(`${data.title}_README.md`, data));
     
 }
 
