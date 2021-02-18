@@ -31,7 +31,7 @@ function renderLicenseBadge(data) {
       return `![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)(https://www.gnu.org/licenses/agpl-3.0)`;
       break;
     case `GNU General Public v2.0`:
-      licenseLink=`[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
+      return `![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)(https://opensource.org/licenses/EPL-1.0)`;
       break;
     case `Mozilla Public 2.0`:
       return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)(https://opensource.org/licenses/MPL-2.0)`;
@@ -48,7 +48,46 @@ function renderLicenseBadge(data) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch(license){
+    case `Apache 2.0`:
+      return `\nProject created using the Apache 2.0 license.\n[Learn more...](https://opensource.org/licenses/Apache-2.0)`;
+      break;
+    case `GNU General Public 3.0`:
+      return `\nProject created using the GNU General Public 3.0 license.\n[Learn more...](https://www.gnu.org/licenses/gpl-3.0)`;
+      break;
+    case `MIT`:
+      return `\nProject created using the MIT license.\n[Learn more...](https://opensource.org/licenses/MIT)`;
+      break;
+    case `BSD 2-Clause`:
+      return `\nProject created using the BSD 2-Clause license.\n[Learn more...](https://opensource.org/licenses/BSD-2-Clause)`;
+      break;
+    case `BSD 3-Clause`:
+      return `\nProject created using the BSD 3-Clause license.\n[Learn more...](https://opensource.org/licenses/BSD-3-Clause)`;
+      break;
+    case `Creative Commons Zero v1.0`:
+      return `\nProject created using the Creative Commons Zero v1.0 license.\n[Learn more...](http://creativecommons.org/publicdomain/zero/1.0/)`;
+      break;
+    case `Eclipse Public 2.0`:
+      return `\nProject created using the Eclipse Public 2.0 license.\n[Learn more...](https://opensource.org/licenses/EPL-1.0)`;
+      break;
+    case `GNU Affero General Public v3.0`:
+      return `\nProject created using the GNU Affero General Public v3.0 license.\n[Learn more...](https://www.gnu.org/licenses/agpl-3.0)`;
+      break;
+    case `GNU General Public v2.0`:
+      return `\nProject created using the GNU General Public v2.0 license.\n[Learn more...](https://opensource.org/licenses/EPL-1.0)`;
+      break;
+    case `Mozilla Public 2.0`:
+      return `\nProject created using the Mozilla Public 2.0 license.\n[Learn more...](https://opensource.org/licenses/MPL-2.0)`;
+      break;
+    case `The Unlicense`:
+      return `\nProject created using the The Unlicense license.\n[Learn more...](http://unlicense.org/)`;
+      break;
+    default:
+      return ``;
+      break;
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
