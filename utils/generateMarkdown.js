@@ -92,7 +92,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license!=="NONE"){
-    let typeOfLicense=`#### License ${renderLicenseBadge} \n ${renderLicenseLink}`;
+    let typeOfLicense=`#### License ${renderLicenseBadge(license)} \n ${renderLicenseLink(license)}`;
     return typeOfLicense;
   }else{
     ``;
@@ -102,23 +102,26 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  renderLicenseBadge(data);
+  return `# ${data.title}
 
-  const markDown = `# ${data.title} \
-  # Description \
-  ${data.description} \
-  ## Installation \
-  ${data.install} \
-  ### Usage \
-  ${data.instructions} \
-  ${renderLicenseSection(data.license)} \
-  renderLicenseLink(); \
-  renderLicenseSection(); \
-  ##### Contributing \
-  ${data.contribute} \
-  ###### Testing \
-  ${data.test} \
-  ###### Questions \
+  # Description
+  ${data.description}
+
+  ## Installation
+  ${data.install}
+
+  ### Usage
+  ${data.instructions}
+
+  ${renderLicenseSection(data.license)}
+
+  ##### Contributing
+  ${data.contribute}
+
+  ###### Testing
+  ${data.test}
+
+  ###### Questions
   ${data.contact}`;
 }
 
