@@ -34,27 +34,26 @@ function askQuestions(){
         new Question("input", "install", questions[2]),
         new Question("input", "instructions", questions[3]),
         new Question("list", "license", questions[4], 
-        ["Apache 2.0", "GNU General Public 3.0", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Creative Commons Zero v1.0", "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "Mozilla Public 2.0", "The Unlicense", "No License"]),
+        ["Apache 2.0", "GNU General Public 3.0", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Creative Commons Zero v1.0", "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "Mozilla Public 2.0", "The Unlicense", "NONE"]),
         new Question("input", "contribute", questions[5]),
         new Question("input", "test", questions[6]),
         new Question("checkbox", "contact", questions[7], 
         ["Email: g.cope13@gmail.com", "GitHub: https://github.com/MyDryDay", "LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/", "Telegram: https://t.me/G_Cope97"]),
-    ]).then(data => {
-        // console.log(JSON.stringify(data));
-        console.log(data);
-        generateMarkdown(data);
-    });
-
+    ])
+    // .then((data) => 
+    // writeToFile(`${data.title}_README.md`, data));
 }
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    fs.writeFile(fileName, generateMarkdown(data), (err) => 
+    err ? console.log(err) : console.log(`Your README file has been created!`));
 }
 
 // TODO: Create a function to initialize app
 function init(questions) {
-    askQuestions(questions);
+    askQuestions(questions)
+
 }
 
 // Function call to initialize app
