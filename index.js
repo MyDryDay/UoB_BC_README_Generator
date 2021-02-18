@@ -38,10 +38,11 @@ function askQuestions(){
         new Question("input", "contribute", questions[5]),
         new Question("input", "test", questions[6]),
         new Question("checkbox", "contact", questions[7], 
-        ["Email: g.cope13@gmail.com", "GitHub: https://github.com/MyDryDay", "LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/", "Telegram: https://t.me/G_Cope97"]),
+        [" Email: g.cope13@gmail.com", " GitHub: https://github.com/MyDryDay", " LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/", " Telegram: https://t.me/G_Cope97"]),
     ])
     .then((data) => 
-    writeToFile(`${data.title}_README.md`, data));
+    writeToFile(`_README.md`, data));
+    
 }
 
 // TODO: Create a function to write README file
