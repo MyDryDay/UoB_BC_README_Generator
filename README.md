@@ -23,15 +23,15 @@
   4. When you have finished answering the prompts a message in the CLI window should appear saying "Your README file has been created!".
   5. Nothing! You can choose to tweak the formatting of the outputted README file if you so choose to, things that i personally might change will be covered in the "Testing"          portion of this README.
 
-  #### License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT) 
+  ### License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT) 
  
   Project created using the MIT license.
   [Learn more...](https://opensource.org/licenses/MIT)
 
-  ##### Contributing
+  ### Contributing
   Please do contribute if you choose to!
 
-  ###### Testing
+  ### Testing
   Most of the testing i have done has consisted of simply generating README files with this application.
   My testing has uncovered a few things that could be improved: 
   1. The project title that a user inputs can't contain spaces, this is because it used the title that is inputted to create the name of the file in the following format              <ProjectTitle>_README.md, this can be altered by simply changing the code in "index.js" if you choose to do so.
@@ -39,7 +39,7 @@
   3. When generating the user's contact information, as it's a checkbox input, the user is unable to enter text such as "Feel free to contact me at: " to accompany the outputted      links.
   4. There is currently no way to add screenshots to the README, this needs to be done manually.
 
-  ###### Questions
+  ### Questions
   Should anyone have questions, feel free to contact me at: 
   GitHub: https://github.com/MyDryDay
   LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/

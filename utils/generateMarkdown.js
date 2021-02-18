@@ -92,7 +92,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license!=="NONE"){
-    let typeOfLicense=`#### License ${renderLicenseBadge(license)} \n ${renderLicenseLink(license)}`;
+    let typeOfLicense=`### License ${renderLicenseBadge(license)} \n ${renderLicenseLink(license)}`;
     return typeOfLicense;
   }else{
     ``;
@@ -124,13 +124,13 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
-  ##### Contributing
+  #### Contributing
   ${data.contribute}
 
-  ###### Testing
+  #### Testing
   ${data.test}
 
-  ###### Questions
+  #### Questions
   ${data.contact}`;
 }
 
