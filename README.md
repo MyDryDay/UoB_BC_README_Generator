@@ -1,4 +1,4 @@
-# Project_README_Generator
+# README_Generator
 
   # Description
   A simple command-line application that generates GitHub project README files based on user inputs
