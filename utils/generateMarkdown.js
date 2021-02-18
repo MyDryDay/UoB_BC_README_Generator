@@ -1,9 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
-function renderLicenseBadge(data) {
+function renderLicenseBadge(license) {
 // [![GitHub license](https://img.shields.io/github/license/MyDryDay/${data.title}.svg)](https://github.com/MyDryDay/${data.title}/blob/main/LICENSE)`; 
-
 
   switch(license){
     case `Apache 2.0`:
@@ -105,7 +104,6 @@ function generateMarkdown(data) {
 
   renderLicenseBadge(data);
 
-
   const markDown = `# ${data.title} \
   # Description \
   ${data.description} \
@@ -122,7 +120,6 @@ function generateMarkdown(data) {
   ${data.test} \
   ###### Questions \
   ${data.contact}`;
-  console.log(markDown);
 }
 
 module.exports = generateMarkdown;
