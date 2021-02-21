@@ -18,10 +18,17 @@
 
   ### Usage
   1. Once you have cloned or downloaded the repository, navigate to it using a CLI of your choice.
-  2. Now, in the CLI, type "node index.js".
-  3. Follow the prompts in the CLI window. IMPORTANT: When entering the projects name, don't use spaces, use underscores or dashes etc.
-  4. When you have finished answering the prompts a message in the CLI window should appear saying "Your README file has been created!".
-  5. Nothing! You can choose to tweak the formatting of the outputted README file if you so choose to, things that i personally might change will be covered in the "Testing"          portion of this README.
+  2. Open the repository in a text editor of your choice.
+  3. Alter line 41 to remove my contact information and add your own information, you can add to the list of options too. 
+  4. Save the "index.js" file.
+  5. Now, in the CLI, type "node index.js".
+  6. Follow the prompts in the CLI window. IMPORTANT: When entering the projects name, don't use spaces, use underscores or dashes etc.
+  7. When you have finished answering the prompts a message in the CLI window should appear saying "Your README file has been created!".
+  8. Nothing! You can choose to tweak the formatting of the outputted README file if you so choose to, things that i personally might change will be covered in the "Testing"          portion of this README.
+  9. (OPTIONAL) Alter line 44 of "index.js" to change the name of the outputted file. It will output a filename of "<ProjectName>_README.md" by default.
+  10. (OPTIONAL) Navigate and open the "generateMarkdown.js" file & you are able to add/remove license link/badge options. Additionally, here you can change how the generated         README.md file is formatted by altering lines 107 - 134.
+
+  A short video showing typica user flow can be found [here](https://drive.google.com/file/d/1buNzn_uut3EGx4RMdR6jpC7oGbIPZcPu/view?usp=sharing)
 
   ### License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT) 
  
@@ -36,7 +43,7 @@
   My testing has uncovered a few things that could be improved: 
   1. The project title that a user inputs can't contain spaces, this is because it used the title that is inputted to create the name of the file in the following format              <ProjectTitle>_README.md, this can be altered by simply changing the code in "index.js" if you choose to do so.
   2. When inputting long pieces of text in the CLI there is currently no way of adding a line break or starting a new line, as such users might have to manually format their          generated README afterwards. 
-  3. When generating the user's contact information, as it's a checkbox input, the user is unable to enter text such as "Feel free to contact me at: " to accompany the outputted      links.
+  3. When generating the user's contact information, as it's a checkbox input, the user is unable to enter text such as "Feel free to contact me at: " to accompany the outputted      links. This, of course, can be altered within the "index.js".
   4. There is currently no way to add screenshots to the README, this needs to be done manually.
 
   ### Questions
