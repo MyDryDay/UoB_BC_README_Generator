@@ -46,6 +46,12 @@
   3. When generating the user's contact information, as it's a checkbox input, the user is unable to enter text such as "Feel free to contact me at: " to accompany the outputted      links. This, of course, can be altered within the "index.js".
   4. There is currently no way to add screenshots to the README, this needs to be done manually.
 
+  ### Future Considerations
+  1. I thought having a multi-selection prompt for contact information was a good idea as a user wouldn't have to do several inputs to include all their contact information,          however this mean the user must first edit the "index.js" file to reflect their own contact information and not mine.
+  2. I'd like to implement more concise functions for generating the GitHub license links and badges, as they are now their quite inelegant.
+  3. An option to include screenshots would be cool.
+  4. Fixing the formatting issues in the generated README.md files would be beneficial & having a table of contents generate along with the rest of the file would be nice too.
+
   ### Questions
   Should anyone have questions, feel free to contact me at: 
   GitHub: https://github.com/MyDryDay
