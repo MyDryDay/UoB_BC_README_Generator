@@ -53,7 +53,7 @@
   4. Fixing the formatting issues in the generated README.md files would be beneficial & having a table of contents generate along with the rest of the file would be nice too.
 
   ### Questions
-  Should anyone have questions, feel free to contact me at: 
-  GitHub: https://github.com/MyDryDay
-  LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/
+  Should anyone have questions, feel free to contact me at:  
+  GitHub: https://github.com/MyDryDay  
+  LinkedIn: https://www.linkedin.com/in/george-cope-633b761bb/  
   Telegram: https://t.me/G_Cope97
